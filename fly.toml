@@ -1,4 +1,4 @@
-app = "autoetl-www-2583"
+app = "autoetl-www"
 primary_region = "sjc"
 kill_signal = "SIGINT"
 kill_timeout = 5
