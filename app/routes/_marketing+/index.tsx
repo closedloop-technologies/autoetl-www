@@ -1,4 +1,5 @@
 import { type MetaFunction } from '@remix-run/node'
+import { Link } from '@remix-run/react'
 import {
     Tooltip,
     TooltipContent,
@@ -7,11 +8,8 @@ import {
 } from '#app/components/ui/tooltip.tsx'
 import { cn } from '#app/utils/misc.tsx'
 import { logos } from './logos/logos.ts'
-import {
-    Link
-} from '@remix-run/react'
 
-export const meta: MetaFunction = () => [{ title: 'Epic Notes' }]
+export const meta: MetaFunction = () => [{ title: 'autoETL' }]
 
 // Tailwind Grid cell classes lookup
 const columnClasses: Record<(typeof logos)[number]['column'], string> = {
@@ -61,13 +59,19 @@ export default function Index() {
                         data-heading
                         className="mt-8 animate-slide-top text-4xl font-medium text-foreground [animation-fill-mode:backwards] [animation-delay:0.3s] md:text-5xl xl:mt-4 xl:animate-slide-left xl:text-6xl xl:[animation-fill-mode:backwards] xl:[animation-delay:0.8s]"
                     >
-                        <a href="https://www.autoetl.dev">auto<strong>ETL</strong></a>
+                        <a href="https://autoetl.dev">auto<strong>ETL</strong></a>
                     </h1>
                     <p
                         data-paragraph
                         className="mt-6 animate-slide-top text-xl/7 text-muted-foreground [animation-fill-mode:backwards] [animation-delay:0.8s] xl:mt-8 xl:animate-slide-left xl:text-xl/6 xl:leading-10 xl:[animation-fill-mode:backwards] xl:[animation-delay:1s]"
                     >
                         Automating your automations
+                    </p>
+                    <p
+                        data-paragraph
+                        className="mt-6 animate-slide-top text-md [animation-fill-mode:backwards] [animation-delay:0.4s] xl:mt-8 xl:animate-slide-left xl:text-xl/6 xl:leading-10 xl:[animation-fill-mode:backwards] xl:[animation-delay:2s]"
+                    >
+                        Wire up APIs with databases in minutes.  Ingest, persist, enrich, merge and serve data automagically.
                     </p>
                 </div>
                 <ul className="mt-16 flex max-w-3xl flex-wrap justify-center gap-2 sm:gap-4 xl:mt-0 xl:grid xl:grid-flow-col xl:grid-cols-5 xl:grid-rows-6">
