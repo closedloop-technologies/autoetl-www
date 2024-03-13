@@ -254,7 +254,7 @@ function App() {
                 <header className="container py-6">
                     <nav className="flex flex-wrap items-center justify-between gap-4 sm:flex-nowrap md:gap-8">
                         <Logo />
-                        <div className="ml-auto hidden max-w-sm flex-1 sm:block">
+                        {/* <div className="ml-auto hidden max-w-sm flex-1 sm:block">
                             {searchBar}
                         </div>
                         <div className="flex items-center gap-10">
@@ -265,7 +265,7 @@ function App() {
                                     <Link to="/login">Log In</Link>
                                 </Button>
                             )}
-                        </div>
+                        </div> */}
                         <div className="block w-full sm:hidden">{searchBar}</div>
                     </nav>
                 </header>
