@@ -24,6 +24,7 @@ import {
 	// useSubmit,
 } from '@remix-run/react'
 import { withSentry } from '@sentry/remix'
+import { ExternalScripts } from 'remix-utils/external-scripts'
 // import { useRef } from 'react'
 import { HoneypotProvider } from 'remix-utils/honeypot/react'
 import { z } from 'zod'
@@ -236,6 +237,7 @@ function Document({
 					}}
 				/>
 				<ScrollRestoration nonce={nonce} />
+				<ExternalScripts />
 				<Scripts nonce={nonce} />
 			</body>
 		</html>
